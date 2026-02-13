@@ -1,0 +1,91 @@
+.historia {
+  padding: 6rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-tag {
+  font-size: 0.65rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 300;
+  color: var(--dark);
+  line-height: 1.1;
+}
+
+.section-title em {
+  font-style: italic;
+  color: var(--accent);
+}
+
+.ornament-line {
+  width: 60px;
+  height: 1px;
+  background: var(--accent);
+  margin: 1.5rem auto 0;
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
+  border: 1px solid var(--sand);
+}
+
+@media (max-width: 640px) {
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.story-item {
+  padding: 2.5rem 2rem;
+  border-right: 1px solid var(--sand);
+  position: relative;
+  transition: background 0.3s;
+}
+
+.story-item:last-child {
+  border-right: none;
+}
+
+.story-item:hover {
+  background: var(--white);
+}
+
+.story-year {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5rem;
+  color: var(--sand);
+  font-style: italic;
+  line-height: 1;
+  margin-bottom: 0.8rem;
+}
+
+.story-event {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.8rem;
+}
+
+.story-text {
+  font-size: 0.9rem;
+  color: var(--light-text);
+  line-height: 1.7;
+}

@@ -1,0 +1,149 @@
+.presentes-section {
+  padding: 6rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.gifts-intro {
+  text-align: center;
+  color: var(--light-text);
+  font-size: 0.9rem;
+  line-height: 1.8;
+  max-width: 580px;
+  margin: 0 auto 3.5rem;
+}
+
+.gifts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5px;
+  background: var(--sand);
+}
+
+.gift-card {
+  background: var(--cream);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  transition: all 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+
+.gift-card:not(.reserved):hover {
+  background: var(--white);
+  transform: translateY(-2px);
+}
+
+.gift-card.reserved {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.gift-emoji {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.gift-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  color: var(--dark);
+}
+
+.gift-desc {
+  font-size: 0.82rem;
+  color: var(--light-text);
+  line-height: 1.6;
+  flex: 1;
+}
+
+.gift-price {
+  font-size: 1rem;
+  color: var(--accent);
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.gift-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.5rem;
+  background: var(--accent);
+  color: var(--white);
+}
+
+.gift-badge.reserved-badge {
+  background: var(--warm-brown);
+}
+
+.gift-loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(44, 37, 32, 0.9);
+  color: var(--cream);
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.pix-card {
+  background: var(--dark);
+  padding: 3rem;
+  text-align: center;
+  margin-top: 1.5px;
+}
+
+.pix-icon {
+  width: 60px;
+  height: 60px;
+  background: var(--accent);
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+.pix-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  color: var(--cream);
+  margin-bottom: 0.5rem;
+}
+
+.pix-text {
+  font-size: 0.85rem;
+  color: var(--light-text);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.pix-key {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  color: var(--accent);
+  border: 1px solid rgba(181, 132, 90, 0.3);
+  padding: 0.8rem 1.5rem;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.pix-key:hover {
+  border-color: var(--accent);
+  background: rgba(181, 132, 90, 0.1);
+}
+
+@media (max-width: 640px) {
+  .gifts-grid {
+    grid-template-columns: 1fr;
+  }
+}
