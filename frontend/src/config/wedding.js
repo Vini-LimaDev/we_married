@@ -18,19 +18,18 @@ export const LOCAIS = {
   cerimonia: {
     tipo: 'Cerimônia',
     nome: 'Igreja Nossa Senhora da Paz',
-    endereco: 'Rua das Flores, 482 — Jardins, São Paulo',
+    endereco: 'Rua das Flores, 482, Jardins, São Paulo',
     horario: '16h00 — Chegar com 15 min de antecedência',
-    // Coordenadas usadas pelo mapa (substitua pelas coordenadas reais do local)
-    lat: -23.5673,
-    lng: -46.6479,
+    lat: -23.5629,
+    lng: -46.6544,
   },
   recepcao: {
     tipo: 'Recepção',
     nome: 'Espaço Villa Serena',
-    endereco: 'Alameda dos Ipês, 120 — Morumbi, SP',
+    endereco: 'Alameda dos Ipês, 120, Morumbi, São Paulo',
     horario: '18h30 — Jantar às 20h',
     lat: -23.6003,
-    lng: -46.7028,
+    lng: -46.7166,
   },
 }
 
