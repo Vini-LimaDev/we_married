@@ -1,0 +1,48 @@
+:root {
+  --cream: #f9f5ef;
+  --sand: #e8ddd0;
+  --warm-brown: #8b6f5e;
+  --dark: #2c2520;
+  --accent: #b5845a;
+  --light-text: #9e8e84;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Jost', sans-serif;
+  background: var(--cream);
+  color: var(--dark);
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+/* Animações */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeUp 0.8s ease both;
+}
