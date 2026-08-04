@@ -1,0 +1,19 @@
+.notification {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  background: var(--dark);
+  color: var(--cream);
+  padding: 1rem 2rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  transition: transform 0.4s ease;
+  z-index: 999;
+  border-left: 3px solid var(--accent);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.notification.show {
+  transform: translateX(-50%) translateY(0);
+}

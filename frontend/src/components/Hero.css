@@ -1,0 +1,123 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(170deg, var(--cream) 0%, var(--sand) 100%);
+}
+
+.hero-bg-pattern {
+  position: absolute;
+  inset: 0;
+  opacity: 0.06;
+  background-image: radial-gradient(circle, var(--warm-brown) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+
+.hero-ornament {
+  position: absolute;
+  font-size: 30vw;
+  opacity: 0.04;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  color: var(--warm-brown);
+  user-select: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.hero-content {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+  animation: fadeUp 1.2s ease both;
+}
+
+.hero-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.hero-names {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(4rem, 12vw, 9rem);
+  font-weight: 300;
+  line-height: 0.9;
+  color: var(--dark);
+  margin-bottom: 1.5rem;
+}
+
+.hero-names .amp {
+  font-style: italic;
+  color: var(--accent);
+  font-size: 0.7em;
+  display: block;
+  margin: 0.1em 0;
+}
+
+.hero-divider {
+  width: 80px;
+  height: 1px;
+  background: var(--accent);
+  margin: 2rem auto;
+  position: relative;
+}
+
+.hero-divider::before,
+.hero-divider::after {
+  content: '✦';
+  position: absolute;
+  top: -0.45em;
+  font-size: 0.5rem;
+  color: var(--accent);
+}
+
+.hero-divider::before {
+  left: -1.2rem;
+}
+
+.hero-divider::after {
+  right: -1.2rem;
+}
+
+.hero-date {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem;
+  color: var(--warm-brown);
+  letter-spacing: 0.1em;
+  font-style: italic;
+}
+
+.hero-scroll {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  animation: pulse 2s ease infinite;
+}
+
+.hero-scroll span {
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--light-text);
+}
+
+.hero-scroll-line {
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(var(--accent), transparent);
+}
